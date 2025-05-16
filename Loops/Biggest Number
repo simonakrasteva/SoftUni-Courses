@@ -15,6 +15,7 @@ namespace BiggestNumber
                     maxNumber = num;
                 }
             }
+            Console.WriteLine(maxNumber);
         }
     }
 }
