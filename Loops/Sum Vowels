@@ -1,0 +1,43 @@
+namespace SumVowels
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+            
+            int sumValue = 0;
+            
+
+            for(int i = 1; i <= n; i++)
+            {
+                char character = char.Parse(Console.ReadLine());
+
+                if (character == 'a')
+                {
+                    sumValue += 1;
+                } else if (character == 'e')
+                {
+                    sumValue += 2;
+                }
+                else if (character == 'i')
+                {
+                    sumValue += 3;
+                }
+                else if (character == 'o')
+                {
+                    sumValue += 4;
+                }
+                else if (character == 'u')
+                {
+                    sumValue += 5;
+                }
+                
+            }
+            Console.WriteLine(sumValue);
+        }
+    }
+}
+        
+    
+
