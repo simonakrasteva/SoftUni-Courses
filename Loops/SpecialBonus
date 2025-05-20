@@ -1,0 +1,23 @@
+namespace SpecialBonus
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int stopNumber = int.Parse(Console.ReadLine());
+            
+            int prevNum = stopNumber;
+
+            while (true)
+            {
+                int num = int.Parse(Console.ReadLine());
+                if (num == stopNumber)
+                {
+                    Console.WriteLine(prevNum * 1.2);
+                    break;
+                }
+                prevNum = num;
+            }
+        }
+    }
+}
