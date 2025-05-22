@@ -1,0 +1,32 @@
+namespace NumberPyramid
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int number = int.Parse(Console.ReadLine());
+            int counter = 1;
+
+            for (int row = 1; row < number; row += 1)
+            {
+                for (int column = 1; column < row; column += 1)
+                {
+                    Console.Write($"{counter} ");
+                    counter += 1;
+
+                    if (counter > number)
+                    {
+                        break;
+                    }
+                    
+                }
+                Console.WriteLine();
+                if (counter > number)
+                {
+                    break;
+                }
+
+            }
+        }
+    }
+}
