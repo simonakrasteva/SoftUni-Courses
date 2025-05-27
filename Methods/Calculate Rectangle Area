@@ -1,0 +1,8 @@
+static void CalculateRectangle(int width, int height)
+{
+    int area = (width * height);
+    Console.WriteLine(area);
+}
+int width = int.Parse(Console.ReadLine());
+int height = int.Parse(Console.ReadLine());
+CalculateRectangle(width, height);
