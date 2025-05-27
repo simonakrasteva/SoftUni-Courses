@@ -1,10 +1,14 @@
-static void RepeatString (string text, int repeatCount)
+static string RepeatString (string text, int repeatCount)
 {
+    string output = "";
     for (int i = 1; i <= repeatCount; i++)
     {
-        Console.Write(text);
+        output += text;
     }
+    return output;
 }
 string text = Console.ReadLine();
 int repeatCount = int.Parse(Console.ReadLine());
-RepeatString(text, repeatCount);
+
+string result = RepeatString(text, repeatCount);
+Console.WriteLine(result);
