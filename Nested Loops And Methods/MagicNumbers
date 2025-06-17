@@ -1,0 +1,17 @@
+int n = int.Parse(Console.ReadLine());
+
+for (int firstDigit = 1; firstDigit <= n; firstDigit++)
+{
+    for (int secondDigit = 1; secondDigit <= n; secondDigit++)
+    {
+        for (int thirdDigit = 1; thirdDigit <= n; thirdDigit++)
+        {
+            int result = firstDigit * secondDigit * thirdDigit;
+
+            if (result == n)
+            {
+                Console.Write($"{firstDigit}{secondDigit}{thirdDigit} ");
+            }
+        }
+    }
+}
