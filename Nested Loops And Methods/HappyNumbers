@@ -1,0 +1,18 @@
+int number = int.Parse(Console.ReadLine());
+
+for (int dig1 = 1; dig1 <= 9; dig1++)
+{
+    for (int dig2 = 0; dig2 <= 9; dig2++)
+    {
+        for (int dig3 = 0; dig3 <= 9; dig3++)
+        {
+            for (int dig4 = 0; dig4 <= 9; dig4++)
+            {
+                if (dig1 + dig2 == number && dig3 + dig4 == number)
+                {
+                    Console.Write($"{dig1}{dig2}{dig3}{dig4} ");
+                }
+            }
+        }
+    }
+}
