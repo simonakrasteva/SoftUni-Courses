@@ -1,0 +1,22 @@
+char startLetter = char.Parse(Console.ReadLine());
+char endLetter = char.Parse(Console.ReadLine());
+char excludedLetter = char.Parse(Console.ReadLine());
+int count = 0;
+
+for (char first = startLetter; first <= endLetter; first++)
+{
+    for (char second = startLetter; second <= endLetter; second++)
+    {
+        for (char third = startLetter; third <= endLetter; third++)
+        {
+            if (first != excludedLetter && second != excludedLetter && third != excludedLetter)
+            {
+                Console.Write($"{first}{second}{third} ");
+                count++;
+            }
+        }
+
+    }
+}
+Console.WriteLine();
+Console.WriteLine(count);
