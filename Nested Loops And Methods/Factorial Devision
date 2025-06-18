@@ -1,0 +1,18 @@
+int firstNum = int.Parse(Console.ReadLine());
+int secondNum = int.Parse(Console.ReadLine());
+
+int factFirstNum = CalculateFactorial(firstNum);
+
+int factSecNum = CalculateFactorial(secondNum);
+
+Console.WriteLine(factFirstNum / factSecNum);
+
+static int CalculateFactorial(int number)
+{
+    int fact = 1;
+    for (int i = 1; i <= number; i++)
+    {
+        fact = fact * i;
+    }
+    return fact;
+}
