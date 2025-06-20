@@ -1,0 +1,19 @@
+int[] firstRowNums = Console.ReadLine().Split(" ").Select(int.Parse).ToArray();
+int[] secondRowNums = Console.ReadLine().Split(" ").Select(int.Parse).ToArray();
+
+bool isIdentical = true;
+
+for (int index = 0; index <= firstRowNums.Length - 1; index++)
+{
+    if (firstRowNums[index] != secondRowNums[index])
+    {
+        isIdentical = false;
+        Console.WriteLine("Arrays are not identical.");
+        break;
+
+    }
+}
+if (isIdentical)
+{
+    Console.WriteLine("Arrays are identical.");
+}
