@@ -1,0 +1,10 @@
+List<int> nums = Console.ReadLine().Split(" ").Select(int.Parse).ToList();
+int rotateNumber = int.Parse(Console.ReadLine());
+
+for (int i = 0; i < rotateNumber; i++)
+{
+    int currentNum = nums[0];
+    nums.RemoveAt(0);
+    nums.Add(currentNum);
+}
+Console.WriteLine(string.Join(" ", nums));
